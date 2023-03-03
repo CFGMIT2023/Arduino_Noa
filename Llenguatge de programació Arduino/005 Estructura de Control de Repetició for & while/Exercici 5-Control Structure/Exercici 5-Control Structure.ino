@@ -2,7 +2,7 @@
 **                                                                               **
 **                          Control Structures                                   **
 **                                                                               **
-** NOM:Noa Garay Villarreal                                    DATA:02/03/2023   **
+**   NOM:Noa Garay Villarreal                                  DATA:03/03/2023   **
 **********************************************************************************/
 
 //********** Includes *************************************************************
@@ -12,6 +12,10 @@ int taula = 2;
 
 //********** Setup ****************************************************************
 void setup()      // run once, when the sketch starts
+{
+  Serial.begin(9600);
+
+  for (int taula=2; taula <=10; taula++)
 {
   Serial.begin(9600);     // set up Serial library at 9600 bps
   Serial.print("Taula de multiplicar del ");
@@ -26,7 +30,7 @@ void setup()      // run once, when the sketch starts
     Serial.println(taula*i);    
   }
 }
-
+}
 //********** Loop *****************************************************************
 void loop()   // we need this to be here even though its empty
 {
