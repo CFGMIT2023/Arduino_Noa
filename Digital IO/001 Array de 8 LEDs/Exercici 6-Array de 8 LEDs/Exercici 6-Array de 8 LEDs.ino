@@ -15,6 +15,7 @@ const byte led6 = 11;         // donar nom al pin 11 de l’Arduino
 const byte led7 = 12;         // donar nom al pin 12 de l’Arduino
 const byte buttonPin2 = 2;     // donar nom al pin 2 de l’Arduino
 const byte buttonPin3 = 3;     // donar nom al pin 3 de l’Arduino
+unsigned long pausa = 100;
 byte buttonState2 = 0;         // per guardar l’estat en que és troba el button2
 byte buttonState3 = 0;         // per guardar l’estat en que és troba el button3
 
@@ -330,6 +331,6 @@ void loop()
    digitalWrite(led7, LOW);
     
    delay(pausa);                  // es queden leds pausa ms en aquest estat  
-  
+  }
 }
 //********** Funcions *************************************************************
