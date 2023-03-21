@@ -33,7 +33,7 @@ void setup()
 void loop()
 {
   buttonState = digitalRead(buttonPin);
-  if (digitalRead(buttonPin) == 0)
+  if (buttonState == 0)
   {
   analogWrite(led0, 0);     // posar PWM del pin 3 a 0
   analogWrite(led1, 0);     // posar PWM del pin 5 a 0
@@ -89,7 +89,7 @@ void loop()
   
   delay(velocitat);          // es queden leds velocitat ms en aquest estat
  }
-else
+ else
  {
   analogWrite(led0, 0);     
   analogWrite(led1, 0);     
