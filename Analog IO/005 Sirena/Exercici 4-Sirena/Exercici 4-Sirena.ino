@@ -19,10 +19,13 @@ void setup()
 //********** Loop *****************************************************************
 void loop()
 {
+  tone(xiulet, 1000, 2000);    // xiulet de durada valPot0
 
-  tone(xiulet, 1000, 1000);    // xiulet de durada valPot0
+  delay(2000+500);
 
-  delay(500);
+  tone(xiulet, 1250, 2000);    // xiulet de durada valPot0
+  
+  delay(2000+500);
 }
 
 //********** Funcions *************************************************************
