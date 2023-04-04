@@ -2,30 +2,33 @@
 **                                                                               **
 **                                  Sirena                                       **
 **                                                                               **
-**   NOM:Noa Garay Villarreal                                   DATA:27/03/2023  **
+**  NOM:Noa Garay Villarreal                                     DATA:28/03/2023 **
 **********************************************************************************/
 
 //********** Includes *************************************************************
 
 //********** Variables ************************************************************
-const byte xiulet = 9;        // donar nom al pin 9 de l’Arduino
-
+const byte xiulet = 9;       
+const byte pot0 = A0;        
+const byte pot1 = A1;
+int valPot0;                
+int valPot1;
 //********** Setup ****************************************************************
 void setup()
 {
-  pinMode(xiulet, OUTPUT);   // definir el pin 9 com una sortida
+  pinMode(xiulet, OUTPUT);  
+  pinMode(pot0, INPUT);
+  pinMode(pot1, INPUT);
 }
 
 //********** Loop *****************************************************************
 void loop()
 {
-  tone(xiulet, 1000, 2000);  //Sona durant 2s a 1000 Hz.
+  valPot0 = analogRead(pot0);    
+  valPot1 = analogRead(pot1);
 
-  delay(2000+500);    
-
-  tone(xiulet, 1250, 2000);  //Sona durant 2s a 1250 Hz.
-  
-  delay(2000+500);
+  tone(xiulet, valPot1, valPot0);    
+  delay(valPot0 + valPot1);             
 }
 
 //********** Funcions *************************************************************

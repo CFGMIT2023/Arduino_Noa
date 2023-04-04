@@ -18,11 +18,10 @@ void setup()
 
 //********** Loop *****************************************************************
 void loop()
+
 {
-
-  tone(xiulet, 1000, 1000);    // xiulet de durada valPot0
-
-  delay(500);
+  tone(xiulet, 1000, 3000); // Sona durant 3 segons el speaker a 1000 Hz.
+  delay(5000); //Para el speaker durant 3 segons.
 }
 
 //********** Funcions *************************************************************

@@ -20,21 +20,21 @@ void setup()
 void loop()
 {
 
-  tone(xiulet, 800, 3000);    // xiulet de durada valPot0
+  tone(xiulet, 800, 3000);    // El xiulet sona durant 3s a 800 Hz.
 
-  delay(500);
+  delay(5000);                 // Pausa de 3s.
 
-  tone(xiulet, 1000, 3000);    // xiulet de durada valPot0
+  tone(xiulet, 1000, 3000);    // El xiulet sona durant 3s a 1000 Hz.
   
-  delay(500);
+  delay(5000);                 // Pausa de 3s.
 
-  tone(xiulet, 1050, 3000);    // xiulet de durada valPot0
+  tone(xiulet, 1050, 3000);    // El xiulet sona durant 3s a 1050 Hz.
 
-  delay(500);
+  delay(5000);                 // Pausa de 3s.
   
-  tone(xiulet, 700, 3000);    // xiulet de durada valPot0
+  tone(xiulet, 700, 3000);    // El xiulet sona durant 3s a 700 Hz.
 
-  delay(500);
+  delay(5000);                //Pausa de 3s i torna a començar.
 
 }
 
